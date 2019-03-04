@@ -1,0 +1,17 @@
+body,div{
+     margin: 0;
+     padding: 0;
+     }
+ div {
+     float:left;
+     border-radius: 2vw;
+     width:28vw;
+     height:28vw;
+     margin-left:4vw;
+     margin-top:4vw;      
+     background-color: orange;
+ }
+ .left{
+     /* clear: left;
+     margin-left:vw; */
+ }
