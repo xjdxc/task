@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 62.5%;
+}
+
+body {
+    position: relative;
+    height: 42rem;
+    width: 100%;
+    text-align: center;
+    background-color: #68cdd5;
+}
+
+.backlogo {
+    position: absolute;
+    left: 18px;
+    top: 10px;
+    width: 2.7rem;
+    height: 2.7rem;
+}
+
+.people {
+    position: absolute;
+    bottom: 24.7%;
+    left: 21.8%;
+    width: 3.5rem;
+    height: 3.5rem;
+}
+
+.pptlogo {
+    position: absolute;
+    bottom: 24.7%;
+    right: 21.8%;
+    width: 3.5rem;
+    height: 3.5rem;
+    
+}
+
+.logo {
+    width: 7.6rem;
+    height: 3rem;
+    margin-top: 4.8rem;
+}
+
+p {
+    position: absolute;
+    left: 21.8%;
+    width: 56.4%;
+    margin-top: 5rem;
+    text-align: left;   
+    color: white;
+    font-size: 1.25rem;
+    line-height: 2.25rem;
+}
+
+.word1 {
+    position: absolute;
+    bottom: 21%;
+    left: calc(21.8% - 0.89rem);
+    color: white;
+    font-size: 1rem;
+}
+
+.word2 {
+    position: absolute;
+    bottom: 21%;
+    right: calc(21.8% - 0.55rem);
+    color: white;
+    font-size: 1rem;
+}
