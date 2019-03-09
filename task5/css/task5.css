@@ -1,0 +1,258 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 625%;
+}
+
+body {
+    font-size: initial;
+    height: 100%;
+    width: 100%;
+    background-color: #ffffff;
+    overflow-y: hidden;
+    min-height: calc(100% - 0.66rem)
+}
+
+header {
+    position: fixed;
+    top: 0;
+    background-color: #5fc0cd;
+    height: 0.44rem;
+    width: 100%;
+    text-align: center;
+
+}
+
+.back {
+    margin: 0.14rem 0 0 0.18rem;
+    float: left;
+    width: 10px;
+    height: 10px;
+    border-bottom: 2px solid white;
+    border-left: 2px solid white;
+    transform: rotate(45deg);
+}
+
+.homePage {
+    font-size: 0.18rem;
+    margin: 0 auto;
+    width: 0.72rem;
+    margin-top: 0.13rem;
+    line-height: 0.18rem;
+    color: #ffffff;
+    font-weight:300;
+}
+
+main{
+    width:100%;
+    margin-top:0.44rem;
+    overflow-y: scroll;/*显示y轴滚动条*/
+    overflow-x: hidden;
+}
+
+.top {
+    height: 1.63rem;
+    width: 100%;
+    background-image: url(../img/css_sprites.png);
+    background-size: 100% 2.48rem;
+    background-repeat: no-repeat;
+    
+}
+
+.left {
+    width: 1.19rem;
+    height: 100%;
+    vertical-align: middle;
+    float: left;
+}
+
+.woman {
+  
+    margin:0.4rem auto;
+    height: 0.845rem;
+    width: 0.845rem;
+    background-image: url(../img/css_sprites.png);
+    background-size: 3.6rem 2.48rem;
+    background-repeat: no-repeat;
+    background-position: 0 -1.635rem;
+}
+
+.section1{
+    height:0.76rem;
+    width:auto;
+    font-size:0;
+}
+
+.name{
+    display: inline-block;
+    font-size:0.18rem;
+    color:#ffffff;
+    margin-top:0.58rem;
+    vertical-align: top;
+    margin-left:0;
+    line-height: 0.18rem;
+}
+
+.age{
+    display: inline-block;
+    font-size:0.16rem;
+    color:#ffffff;
+    margin-top:0.6rem;
+    vertical-align: top;
+    line-height: 0.16rem;
+    margin-left:0.15rem;
+  
+}
+
+.section2{
+    height:0.87rem;
+    width:auto;
+}
+
+.map{
+    margin-top:0.12rem;
+    display: inline-block;
+    width:0.09rem;
+    height:0.115rem;
+    background-image: url(../img/css_sprites.png);
+    background-size:3.6rem 2.48rem;
+    background-position: -0.965rem -1.635rem;
+}
+
+.adress{
+    font-size:0.12rem;
+    color:#ffffff;
+    margin-top:0.13rem;
+    margin-left:0.07rem;
+    display: inline-block;
+    line-height:0.12rem;
+}
+
+.contain{
+    height:4.17rem;
+    background: #ffffff;
+    width:100%;
+}
+
+.box{
+    height:.5rem;
+    line-height: 0.5rem;
+}
+
+.line1{
+    margin-left:0.15rem;
+    margin-right:0.15rem;
+    height:0.13rem;
+    width:0;
+    border-right:0.02rem solid #5fc0cd;
+    display: inline-block;
+}
+
+span{
+    font-size: 0.16rem;
+    line-height: 0.16rem;
+    display: inline-block;
+}
+
+.line2{
+    height:0;
+    width:100%;
+    border-top:0.01rem solid #e1e5e7;
+}
+
+.star1{
+    display: inline-block;
+    height:0.12rem;
+    width:0.12rem;
+    margin-left:0.31rem;
+    margin-right:0.05rem;
+    background-image: url(../img/css_sprites.png);
+    background-size:3.6rem 2.48rem;
+    background-position: -0.845rem -1.635rem;
+}
+
+.line3{
+    margin-left:0.1rem;
+    margin-right:0.1rem;
+    height:0.13rem;
+    width:0;
+    border-right:0.02rem solid #e1e5e7;
+    display: inline-block;
+}
+
+.star2{
+    display: inline-block;
+    height:0.12rem;
+    width:0.12rem;
+    margin-right:0.05rem;
+    background-image: url(../img/css_sprites.png);
+    background-size:3.6rem 2.48rem;
+    background-position: -0.845rem -1.635rem;
+}
+
+.line4{
+    height:0;
+    margin-left:0.17rem;
+    margin-right:0.17rem;
+    width:calc(100% - 0.34rem);
+    border-top:0.01rem solid #e1e5e7;
+}
+
+.word{
+    color:#e1e5e7;
+    display: inline-block;
+    margin-left: 0.31rem;
+    vertical-align: middle;
+}
+
+.word2{
+    color:#E26163;
+    display: inline-block;
+    font-weight:normal;
+}
+
+
+.long{
+    width:calc(100% - 1.3rem);
+    display:inline-block;
+    vertical-align: middle;
+    font-size:0.14rem;
+    line-height: 0.16rem;
+}
+
+footer{
+    position: fixed;
+    bottom:0;
+    height:0.84rem;
+    width:100%;
+    font-size: 0;
+    background-color: #ffffff;
+    line-height: 0.84rem;
+}
+
+.button1{
+    height:0.44rem;
+   color:#5fc0cd;
+    border:0.01rem solid #5fc0cd;
+    border-radius:0.05rem;
+    font-size: 0.17rem;
+    background-color: #ffffff;
+    margin-left:0.19rem;
+    width:calc(50% - 0.28rem);
+    vertical-align: middle;
+}
+
+.button2{
+    height:0.44rem;
+    color:#ffffff;
+    border:0.01rem solid #5fc0cd;
+    border-radius:0.05rem;
+    font-size: 0.17rem;
+    background-color: #5fc0cd;
+    margin-left:0.14rem;
+    width:calc(50% - 0.28rem);
+    vertical-align: middle;
+}
