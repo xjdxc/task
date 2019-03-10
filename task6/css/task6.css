@@ -1,0 +1,340 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 625%;
+}
+
+body {
+    font-size: initial;
+    width: 100%;
+    height: 6.2rem;
+    background: #ffffff;
+    overflow-y: hidden;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    height: 0.84rem;
+    width: 100%;
+    background-color: #5fc0cd;
+    z-index: 1;
+}
+
+.box {
+    margin: 0.04rem auto;
+    width: 1.44rem;
+    line-height: 0.36rem;
+    font-size: 0;
+    border-radius: 5px;
+    background-color: #55a8b3;
+}
+
+.employer {display: 
+    inline-block;
+    width: 0.51rem;
+    padding-left: 0.12rem;
+    padding-right: 0.09rem;
+    font-size: 0.17rem;
+    line-height: 0.17rem;
+    color: #ffffff;
+    vertical-align: middle;
+}
+
+.worker {
+    display: inline-block;
+    width: 0.51rem;
+    height: 0.36rem;
+    padding-left: 0.09rem;
+    padding-right: 0.12rem;
+    font-size: 0.17rem;
+    color: #55a8b3;
+    vertical-align: middle;
+    border-radius: 5px;
+    background-color: #ffffff;
+}
+
+.icon {
+    position: absolute;
+    top: 0.11rem;
+    right: 0.15rem;
+    width: 0.22rem;
+    height: 0.21rem;
+    background-image: url(../img/css_sprites.png);
+    background-size: 0.23rem 1.065rem;
+    background-position: 0 -0.845rem;
+}
+
+footer { position: fixed;
+    bottom: 0;
+    height: 0.5rem;
+    width: 100%;
+    background-color: #f8fafb;
+}
+
+.squar {
+    position: relative;
+    display: block;
+    width: 0.48rem;
+    height: 0.48rem;
+    margin: auto;
+    margin-top: 0.01rem;
+    border: 0;
+    border-radius: 0.24rem;
+    background-color: #55a8b3;
+    outline: none;
+}
+
+.write {
+    position: absolute;
+    width: 0.2rem;
+    height: 0.2rem;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background-image: url(../img/css_sprites.png);
+    background-size: 0.23rem 1.065rem;
+    background-position: 0 -0.64rem;
+}
+
+.empty1 {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 0.5rem;
+    width: calc(50% - 0.24rem);
+    border: 0;
+    background-color: #f8fafb;
+    outline: none;
+}
+
+.house {
+    width: 0.23rem;
+    height: 0.2rem; 
+    margin-left: calc(50% - 0.115rem);
+    margin-top: 0.06rem;
+    background-image: url(../img/css_sprites.png);
+    background-size: 0.23rem 1.065rem;
+    background-position: -0 -0.235rem;
+  
+}
+
+.homePage {
+    margin-top: 0.07rem;
+    font-size: 0.1rem;
+    color: #55a8b3;
+    line-height: 0.1rem;
+    
+}
+
+.empty2 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 0.5rem;
+    width: calc(50% - 0.24rem);
+    border: 0;
+    background-color: #f8fafb;
+    outline: none;
+}
+
+.people {
+    width: 0.21rem;
+    height: 0.21rem;
+    margin-left: calc(50% - 0.105rem);
+    margin-top: 0.06rem;
+    background-image: url(../img/css_sprites.png);
+    background-size: 0.23rem 1.065rem;
+    background-position: -0 -0.435rem;
+    
+}
+
+.mine {
+    font-size: 0.1rem;
+    color: rgba(153, 153, 153, 1);
+    line-height: 0.1rem;
+    margin-top: 0.07rem;
+}
+
+.top {
+    width: 100%;
+    height: 0.4rem;
+    line-height: 0.4rem;
+    font-size: 0;
+    background-color: #ffffff;
+}
+
+.location {
+    float: left;
+    position: relative;
+    display: inline-block;
+    width: 33%;
+    border-right: 1px solid rgba(225, 229, 231, 1);
+    font-size: 14px;
+    text-align: center;
+}
+
+.eal {
+    position: relative;
+    float: left;
+    display: inline-block;
+    width: calc(34% - 0.03rem);
+    border-right: 1px solid rgba(225, 229, 231, 1);
+    font-size: 14px;
+    text-align: center;
+}
+
+.situation {
+    position: relative;
+    display: inline-block;
+    width: 33%;
+    color: #999999;
+    font-size: 14px;
+    text-align: center;
+    border-right: 1px solid white;
+}
+
+a {
+    text-decoration: none;
+    color: #999999;
+}
+
+.tnav li {
+    list-style: none;
+    border-bottom: 0.01rem solid rgba(225, 229, 231, 1);
+    border-left: 0.01rem solid rgba(225, 229, 231, 1);
+    background-color: #ffffff;
+}
+
+.tnav {
+    display: none;
+}
+
+.nav li:hover .tnav {
+    display: block;
+}
+
+.troangle {
+    position: absolute;
+    float: right;
+    width: 0;
+    height: 0;
+    border-width: 0.08rem;
+    border-style: solid;
+    border-color: #afbac0 transparent transparent transparent;
+    top: 0.18rem;
+    right: 5%;
+}
+
+.line1 {
+    height: 0rem;
+    width: 100%;
+    border-top: 1px solid rgba(225, 229, 231, 1);
+    position: fixed;
+    top: 0.85rem;
+}
+
+main {
+    position: fixed;
+    width: 100%;
+    top: 0.84rem;
+    bottom: 0.5rem;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.box2 {
+    position: relative;
+    height: 0.9rem;
+    width: 100%;
+    border-bottom: 1px solid rgba(225, 229, 231, 1);
+    font-size: 0;
+    line-height: 0.9rem;
+    z-index: -1;
+}
+
+.calender {
+    position: absolute;
+    width: 0.12rem;
+    height: 0.12rem;
+    background-image: url(../img/css_sprites.png);
+    background-size: 0.23rem 1.065rem;
+    background-position: -0 -0.115rem;
+    margin: 0.15rem 0.07rem 0 0.15rem;
+}
+
+.date {
+    position: absolute;
+    left: 0.35rem;
+    width: 0.48rem;
+    margin-top: 0.15rem;
+    color: #999999;
+    font-size: 0.12rem;
+    line-height: 0.12rem;
+}
+
+.map {
+    position: absolute;
+    left: 0.16rem;
+    bottom: 0.16rem;
+    width: 0.095rem;
+    height: 0.12rem;
+    background-image: url(../img/css_sprites.png);
+    background-size: 0.23rem 1.065rem;
+    background-position: 0 0;
+}
+
+.adress {
+    position: absolute;
+    bottom: 0.16rem;
+    left: 0.33rem;
+    font-size: 0.13rem;
+    line-height: 0.12rem;
+    color: #999999;
+}
+
+.flex {
+    display: flex;
+    height: 0.9rem;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.quantum {
+    height: 0.14rem;
+    width: 1.48rem;
+    line-height: 0.14rem;
+    vertical-align: middle;
+    font-size: 0.14rem;
+    margin-left: 0.34rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    -o-text-overflow: ellipsis;
+}
+
+.price {
+    margin-right: 0.36rem;
+    font-size: 0.15rem;
+    color: rgba(230, 59, 14, 1);
+    line-height: 0.15rem;
+    white-space: nowrap;
+}
+
+.enter {
+    position: absolute;
+    top: 0.37rem;
+    right: 0.16rem;
+    height: 0.12rem;
+    width: 0.12rem;
+    border-top: 1px solid #5fc0cd;
+    border-right: 1px solid #5fc0cd;
+    transform: rotate(45deg);
+}
