@@ -1,0 +1,238 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 625%;
+}
+
+body {
+    font-size: initial;
+    height: 5.42rem;
+    width: 100%;
+    background-color: #29bde0;
+    overflow: hidden;
+}
+
+header {
+    height: 1.28rem;
+    width: 100%;
+    position: fixed;
+    top: 0;
+}
+
+.box1 {
+    height: 0.4rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu {
+    margin-left: 0.12rem;
+    width: 0.19rem;
+    height: 0.19rem;
+    border: 0.01rem solid #ffffff;
+}
+
+.line {
+    height: 0.01rem;
+    width: 0.17rem;
+    margin: 0.04rem auto 0 auto;
+    background-color: #ffffff;
+}
+
+.heading {
+    font-size: 0.17rem;
+    color: #ffffff;
+    line-height: 0.17rem;
+    width: 0.34rem;
+    height: 0.17rem;
+}
+
+.close {
+    position: relative;
+    width: 0.25rem;
+    height: 0.03rem;
+    background-color: #ffffff;
+    transform: rotate(45deg);
+    margin-right: 0.12rem;
+}
+
+.close::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0.25rem;
+    height: 0.03rem;
+    background-color: #ffffff;
+    transform: rotate(90deg);
+}
+
+.vote {
+    height: 0.4rem;
+    width: auto;
+    background-color: #b9e9f5;
+    line-height: 0.4rem;
+    padding-left: 0.23rem;
+    font-size: 0.13rem;
+}
+
+.player {
+    position: absolute;
+    width: 0.26rem;
+    height: 0.26rem;
+    border-radius: 0.13rem;
+    background-color: #fbb435;
+    right: 0.09rem;
+    bottom: 0.55rem;
+
+}
+
+audio{
+    position: absolute;
+   top:0.35rem;
+   right:-.65rem;
+   width:1rem;
+   z-index: 10;
+   opacity:0;
+}
+
+.triangle {
+    position: absolute;
+    bottom: 0.61rem;
+    right: 0.13rem;
+    width: 0.13rem;
+    height: 0.15rem;
+    background-image: url(../img/triangle.png);
+    background-size: 0.13rem 0.15rem;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    height: 0.95rem;
+    width: 100%;
+}
+
+button {
+    position: absolute;
+    top: 0.21rem;
+    left: 12.5%;
+    height: 0.44rem;
+    width: 75%;
+    background-color: #fbb435;
+    color: #ffffff;
+    font-size: 0.22rem;
+    outline: none;
+    border: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+main {
+    position: fixed;
+    top: 1.28rem;
+    bottom: 0.96rem;
+    overflow: scroll;
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.triangle2 {
+    margin-left: 0.36rem;
+    width: 0rem;
+    height: 0rem;
+    border: 0.07rem solid #b9e9f5;
+    border-color: #b9e9f5 transparent transparent transparent;
+    border-width: 0.07rem 0.04rem;
+}
+
+.most {
+    padding-left: 0.36rem;
+    color: #ffffff;
+    font-size: 0.12rem;
+    line-height: 0.12rem;
+}
+
+content {
+    width: 86.25vw;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 6.875vw;
+    padding-top:0
+}
+
+.box2 {
+    width: 87.25vw;
+    height: 32.5vw;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.box3 {
+    width: 21.25vw;
+    height: 32.5vw;
+}
+
+.box4 {
+    width: 19.375vw;
+    height: 19.375vw;
+    border: 0.9375vw solid #ffffff;
+    font-size: 0;
+
+}
+
+li{
+    display: inline-block;
+    list-style: none;
+    margin:3.4375vw 0.234375vw 0;
+    background-color: #ffffff;
+    width:4.375vw;
+    height:4.375vw;
+}
+
+.skill{
+    display: none;
+    width:100%;
+}
+
+img{
+    margin:10%;
+    width:3.5vw;
+    height:3.5vw;
+   
+}
+
+.box4:hover .skill{
+    display: block;
+}
+
+.people {
+    width: 19.375vw;
+    height: 15.625vw;
+    background-color: #f5c97b;
+    font-size: 4.6875vw;
+    line-height: 15.625vw;
+    text-align: center;
+
+}
+
+.number {
+    height: 3.75vw;
+    width: 19.375vw;
+    background-color: #83b09a;
+    color: #ffffff;
+    text-align: center;
+    line-height: 3.75vw;
+    font-size: 3.4375vw;
+}
