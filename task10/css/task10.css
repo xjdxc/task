@@ -443,8 +443,8 @@ ul :first-child>a {
         width: 100%;
     }
 
-    .boxer-content{
-        padding-left:0.6rem;
+    .boxer-content {
+        padding-left: 0.6rem;
     }
 }
 
@@ -495,9 +495,9 @@ label {
 }
 
 /*选项下拉框*/
-.select-style1{
+.select-style1 {
     position: absolute;
-    margin:auto 0.37rem auto 0;
+    margin: auto 0.37rem auto 0;
     top: 0.25rem;
     right: 0rem;
     width: 1.27rem;
@@ -516,26 +516,28 @@ select {
 }
 
 @media screen and (max-width:576px) {
-    .select-style1{
-        width:1rem;
-        margin-right:0.05rem;
+    .select-style1 {
+        width: 1rem;
+        margin-right: 0.05rem;
     }
 
-    .select-style3{
-        width:1rem!important;
-        margin-right:0.05rem!important;
+    .select-style3 {
+        width: 1rem !important;
+        margin-right: 0.05rem !important;
     }
 
-    select{
-        padding:0.05rem;
+    select {
+        padding: 0.05rem;
     }
 
-    .ruler-content{
-        padding-right:0.5rem!important;
+    .ruler-content {
+        padding-right: 0.5rem !important;
     }
 }
 
-.select-style1::after,.select-style2::after,.select-style3::after {
+.select-style1::after,
+.select-style2::after,
+.select-style3::after {
     position: absolute;
     right: 0.04rem;
     top: 0.045rem;
@@ -547,7 +549,9 @@ select {
     pointer-events: none;
 }
 
-.select-style1::before,.select-style2::after,.select-style3::before {
+.select-style1::before,
+.select-style2::after,
+.select-style3::before {
     position: absolute;
     content: "";
     right: 0.1rem;
@@ -563,7 +567,7 @@ select {
 
 /*确定尺寸*/
 
-.size-content{
+.size-content {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -572,84 +576,85 @@ select {
     font-size: 0.18rem;
     color: rgba(102, 102, 102, 1);
     border: 1px solid rgba(232, 232, 232, 1);
-    padding-top:0.3rem;
-    padding-left:0.8rem;
-    padding-bottom:0.3rem;
-    font-size: 0;   
+    padding-top: 0.3rem;
+    padding-left: 0.8rem;
+    padding-bottom: 0.3rem;
+    font-size: 0;
 }
 
-.section{
+.section {
     display: flex;
     flex-wrap: wrap;
-    min-height:0.3rem;
+    min-height: 0.3rem;
 }
 
-.size-part1{
+.size-part1 {
     display: flex;
     align-items: center;
     position: relative;
-    width:10%;
+    width: 10%;
     font-size: 0.18rem;
     line-height: 0.18rem;
 }
 
-.size-part2{
+.size-part2 {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    width:20%;
+    width: 20%;
     font-size: 0.18rem;
     line-height: 0.18rem;
 }
 
-@media screen and (max-width:992px) and (min-width:768px){
+@media screen and (max-width:992px) and (min-width:768px) {
 
-    .section{
+    .section {
         padding-right: 1rem;
     }
 
 
-    .size-part1{
-        width:20%
+    .size-part1 {
+        width: 20%
     }
 
-    .size-part2{
-        width:30%;
+    .size-part2 {
+        width: 30%;
     }
 
-    .size-content{
-        height:1.5rem;
+    .size-content {
+        height: 1.5rem;
     }
 }
 
-@media screen and (max-width:768px){
-    .size-part1{
-        width:100%;
+@media screen and (max-width:768px) {
+    .size-part1 {
+        width: 100%;
     }
 
-    .size-part2{
-        width:100%!important;
-        margin-top:0.1rem;
-    }
-    
-    .size-content{
-        height:3rem;
-        padding-left:0.6rem;
-        padding-top:0.5rem;
+    .size-part2 {
+        width: 100% !important;
+        margin-top: 0.1rem;
     }
 
-    .select-style1{
-        top:0.1rem;
+    .size-content {
+        height: 3rem;
+        padding-left: 0.6rem;
+        padding-top: 0.5rem;
     }
 
-    .select-style3{
-        top:0.1rem !important;
+    .select-style1 {
+        top: 0.1rem;
     }
 
-    .boxer-content{
-        padding-top:0.3rem;
+    .select-style3 {
+        top: 0.1rem !important;
+    }
+
+    .boxer-content {
+        padding-top: 0.3rem;
     }
 }
+
 .size-part1 label::before {
     content: "";
     position: absolute;
@@ -668,7 +673,7 @@ select {
     position: absolute;
     left: -0.29rem;
     top: 50%;
-    margin-top:-0.02rem;
+    margin-top: -0.02rem;
     width: 4px;
     height: 4px;
     background: rgba(255, 255, 255, 1);
@@ -680,15 +685,15 @@ select {
     background: rgba(29, 122, 217, 1);
 }
 
-.size-part1 input{
+.size-part1 input {
     display: none;
 }
 
-.fuck{
-    width:0.66rem;
-    height:0.26rem;
-    font-size:18px;
-    color:rgba(102,102,102,1);
+.fuck {
+    width: 0.66rem;
+    height: 0.26rem;
+    font-size: 18px;
+    color: rgba(102, 102, 102, 1);
 }
 
 
@@ -696,7 +701,7 @@ select {
 
 
 /*选择材质*/
-.ruler-content{
+.ruler-content {
     position: relative;
     display: flex;
     justify-content: start;
@@ -705,9 +710,9 @@ select {
     font-size: 0.18rem;
     color: rgba(102, 102, 102, 1);
     border: 1px solid rgba(232, 232, 232, 1);
-    padding:0 1.45rem 0.6rem 0.8rem;
+    padding: 0 1.45rem 0.6rem 0.8rem;
     font-size: 0;
-    
+
 }
 
 .ruler input {
@@ -729,8 +734,8 @@ select {
         width: 100%;
     }
 
-    .ruler-content{
-        padding-left:0.6rem;
+    .ruler-content {
+        padding-left: 0.6rem;
     }
 }
 
@@ -758,7 +763,7 @@ select {
     content: "";
     position: absolute;
     left: -0.29rem;
-    bottom:0;
+    bottom: 0;
     transform: translate(0, -0.07rem);
     width: 4px;
     height: 4px;
@@ -771,9 +776,9 @@ select {
     background: rgba(29, 122, 217, 1);
 }
 
-.select-style3{
+.select-style3 {
     position: absolute;
-    margin:auto 0.37rem auto 0;
+    margin: auto 0.37rem auto 0;
     top: 0.53rem;
     right: 0rem;
     width: 1.27rem;
@@ -781,7 +786,27 @@ select {
 }
 
 
+.next {
+    width: calc(100% - 2px);
+    height: 1.44rem;
+    padding-top: 1.43rem;
+    margin-bottom: 0.54rem;
+    border: 1px solid rgba(232, 232, 232, 1);
+    border-top: transparent;
+    
+}
 
+.next-button {
+    display: block;
+    margin:0 auto;
+    width: 179px;
+    height: 46px;
+    background: #E15053;
+    border: 1px solid rgba(232, 232, 232, 1);
+    color: #ffffff;
+    border-radius: 5px;
+    outline: none;
+}
 
 
 
