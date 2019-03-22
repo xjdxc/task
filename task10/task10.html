@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="css/task10.css">
+
+</head>
+
+<body>
+    <header>
+        <div class="top-color">
+            <div class="container">
+                <div class="customService">客服热线：010-594-78634</div>
+                <a href="">
+                    <div class="regsiter">注册</div>
+                </a>
+                <a href="">
+                    <div class="login">登录</div>
+                </a>
+            </div>
+        </div>
+
+
+
+        <!--原本菜单栏-->
+        <div class="nav-height">
+            <div class="container nav-height">
+                <ul class="nav1">
+                    <li class="nav-content"> <a href="">品质保障 </a></li>
+                    <li class="nav-content"> <a href="">标准箱 </a></li>
+                    <li class="nav-content"> <a href="">在线定制 </a></li>
+                    <li class="nav-content"> <a href="">首页 </a></li>
+                </ul>
+
+                <!--折叠菜单栏-->
+                <div class="collapsiblenav">
+                    <button type="button">
+                        <label for="boom">
+                            <!--放置label并连接input标签-->
+                            <div class="menu">
+                                <div class="line2"></div>
+                                <div class="line2"></div>
+                                <div class="line2"></div>
+                            </div>
+                        </label>
+                    </button>
+                </div>
+
+                <input type="checkbox" id="boom">
+                <!--设置并隐藏input框-->
+
+                <ul class="nav2">
+                    <a href="">
+                        <li>首页</li>
+                    </a>
+                    <a href="">
+                        <li>在线定制</li>
+                    </a>
+                    <a href="">
+                        <li>标准箱</li>
+                    </a>
+                    <a href="">
+                        <li>品质保障</li>
+                    </a>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="container flowsheet-box">
+            <div class="flowsheet">
+                <div class="flowsheet-part">
+                    <div class="flowsheet-number1">1</div>
+                    <div class="flowsheet-line1"></div>
+                    <div class="flowsheet-word1">1.定制纸箱
+                    </div>
+                </div>
+                <div class="flowsheet-part">
+                    <div class="flowsheet-number2">2</div>
+                    <div class="flowsheet-line2"></div>
+                    <div class="flowsheet-word2">2.选择数量
+                    </div>
+                </div>
+                <div class="flowsheet-part">
+                    <div class="flowsheet-number2">3</div>
+                    <div class="flowsheet-line2"></div>
+                    <div class="flowsheet-word2">3.上传附件
+                    </div>
+                </div>
+                <div class="flowsheet-part">
+                    <div class="flowsheet-number2">4</div>
+                    <div class="flowsheet-line2"></div>
+                    <div class="flowsheet-word2">4.确认下单
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--定制纸箱-->
+        <div class="container">
+            <div class="container-title">&ensp;请您按照以下步骤来定制您的纸箱</div>
+            <!--选择箱型-->
+            <div class="boxer">
+                <div class="part-title">
+                    &ensp; <img src="image/box.png">&ensp;选择箱型
+                </div>
+                <div class="boxer-content">
+                    <div class="boxer-option"><input name="boxer-type" type="radio" value="对口箱" id="cpbox"
+                            checked="checked">
+                        <label for="cpbox">对口箱</label></div>
+                    <div class="boxer-option"> <input name="boxer-type" type="radio" value="飞机箱" id="airplane-box">
+                        <label for="airplane-box">飞机盒</label></div>
+                    <div class="boxer-option"> <input name="boxer-type" type="radio" value="天地盖" id="sky&ground-box">
+                        <label for="sky&ground-box">天地盖</label></div>
+                    <div class="select-style1"> <select>
+                            <option value="">查看详情</option>
+                            <option value="对口箱">对口箱</option>
+                            <option value="飞机盒">飞机盒</option>
+                            <option value="天地盖">天地盖</option>
+                        </select></div>
+                </div>
+            </div>
+
+            <!--确定尺寸-->
+            <div class="size">
+                <div class="part-title">
+                    &ensp; <img src="image/Ruler.png">&ensp;确定尺寸
+                </div>
+                <div class="size-content">
+                    <div class="section">
+                        <div class="size-part1">
+                            <input name="radii" type="radio" value="O.D" id="O.D" checked="checked">
+                            <label for="O.D">外径</label>
+                        </div>
+                        <div class="size-part2">
+                            <label>长&ensp;<input onkeyup="value=value.replace(/[^\d]/g,'')" class="fuck" name="long"
+                                    type="text">&ensp;mm
+                            </label>
+                        </div>
+                        <div class="size-part2">
+                            <label>宽&ensp;<input onkeyup="value=value.replace(/[^\d]/g,'')" class="fuck" name="long"
+                                    type="text">&ensp;mm
+                            </label>
+                        </div>
+                        <div class="size-part2">
+                            <label>高&ensp;<input onkeyup="value=value.replace(/[^\d]/g,'')" class="fuck" name="long"
+                                    type="text">&ensp;mm
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="section">
+                            <div class="size-part1">
+                                <input name="radii" type="radio" value="O.D" id="I.D" >
+                                <label for="I.D">内径</label>
+                            </div>
+                            <div class="size-part2">
+                                <label>长&ensp;<input onkeyup="value=value.replace(/[^\d]/g,'')" class="fuck" name="long"
+                                        type="text">&ensp;mm
+                                </label>
+                            </div>
+                            <div class="size-part2">
+                                <label>宽&ensp;<input onkeyup="value=value.replace(/[^\d]/g,'')" class="fuck" name="long"
+                                        type="text">&ensp;mm
+                                </label>
+                            </div>
+                            <div class="size-part2">
+                                <label>高&ensp;<input onkeyup="value=value.replace(/[^\d]/g,'')" class="fuck" name="long"
+                                        type="text">&ensp;mm
+                                </label>
+                            </div>
+                        </div>
+
+
+
+
+                    <div class="select-style3"> <select>
+                            <option>查看详情</option>
+                            <option value="内径">内径</option>
+                            <option value="外径">外径</option>
+
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+            <!--选择材质-->
+            <div class="ruler">
+                <div class="part-title">
+                    &ensp; <img src="image/Scissors.png">&ensp;选择材质
+                </div>
+                <div class="ruler-content">
+                    <div class="ruler-option"><input name="ruler-type" type="radio" value="对口箱" id="item1"
+                            checked="checked">
+                        <label for="item1">三层A瓦优质</label></div>
+                    <div class="ruler-option"><input name="ruler-type" type="radio" value="对口箱" id="item2">
+                        <label for="item2">三层B瓦优质</label></div>
+                    <div class="ruler-option"><input name="ruler-type" type="radio" value="对口箱" id="item3">
+                        <label for="item3">三层C瓦优质</label></div>
+                    <div class="ruler-option"><input name="ruler-type" type="radio" value="对口箱" id="item4">
+                        <label for="item4">三层D瓦优质</label></div>
+                    <div class="ruler-option"><input name="ruler-type" type="radio" value="对口箱" id="item5">
+                        <label for="item5">三层E瓦优质</label></div>
+                    <div class="select-style3"> <select>
+                            <option>查看详情</option>
+                            <option value="三层A瓦优质">三层A瓦优质</option>
+                            <option value="三层B瓦优质">三层B瓦优质</option>
+                            <option value="三层C瓦优质">三层C瓦优质</option>
+                            <option value="三层D瓦优质">三层D瓦优质</option>
+                            <option value="三层E瓦优质">三层E瓦优质</option>
+                        </select></div>
+                </div>
+            </div>
+        </div>
+
+
+
+    </main>
+
+
+
+
+
+
+
+
+
+    <footer>
+        <div class="container friendlink">
+            <div class="slogan">
+                51包装网— 纸箱包装首选服务平台
+            </div>
+            <div class="friends">
+                <div class="friend"><a href="">关于我们</a></div>
+                <div class="friend"><a href="">关于我们</a></div>
+                <div class="friend"><a href="">关于我们</a></div>
+                <div class="friend"><a href="">关于我们</a></div>
+                <div class="friend"><a href="">关于我们</a></div>
+                <div class="emsp">&emsp;&emsp;&emsp;&emsp;</div>
+            </div>
+            <div class="connect">
+                <div class="contact">
+                    <div>
+                        TEL：400-0000-000
+                    </div>
+                    <div>
+                        企业QQ：123456789
+                    </div>
+                    <div>
+                        微信号：XXXXXXX
+                    </div>
+
+                </div>
+                <div class="two"></div>
+            </div>
+
+        </div>
+
+        <div class="copyRight">
+            <div class="container">
+                北京五一包装科技有限公司Copyright ©2015&emsp;
+                51baozhuang.com015 All rights reserved. 京icp备99999999-1
+            </div>
+        </div>
+
+    </footer>
+
+
+
+
+
+
+
+</body>
+
+</html>
