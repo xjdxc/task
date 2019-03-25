@@ -1,0 +1,210 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 625%;
+}
+
+body {
+  font-size: initial;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 0.44rem;
+  background-color: #5fc0cd;
+}
+
+header .back {
+  float: left;
+  width: 0.1rem;
+  height: 0.1rem;
+  margin: .14rem 0 0 0.18rem;
+  border: 0.02rem solid #ffffff;
+  border-right: 0;
+  border-bottom: 0;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+header .homepage {
+  width: 0.72rem;
+  margin: 0 auto;
+  line-height: 0.44rem;
+  font-size: 0.18rem;
+  color: #ffffff;
+}
+
+main {
+  position: fixed;
+  top: 0.44rem;
+  bottom: 0.84rem;
+  width: 100%;
+  overflow-y: scroll;
+}
+
+.content-header {
+  width: 100%;
+  height: 1.63rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-image: url(../img/pictures.png);
+  background-size: 100% 2.71rem;
+  background-position: -0 -1.075rem;
+  background-repeat: no-repeat;
+}
+
+.content-header .woman {
+  width: 0.84rem;
+  height: 0.84rem;
+  margin: 0 0.15rem;
+  background-image: url(../img/pictures.png);
+  background-size: 3.6rem 2.71rem;
+  background-repeat: no-repeat;
+  background-position: -0 -0.23rem;
+}
+
+.content-header .message {
+  color: #ffffff;
+  font-size: 0;
+}
+
+.content-header .message .name {
+  display: inline-block;
+  font-size: 0.18rem;
+  line-height: 0.18rem;
+}
+
+.content-header .message .age {
+  display: inline-block;
+  margin: 0.02rem 0 0 0.15rem;
+  font-size: 0.14rem;
+  line-height: 0.14rem;
+}
+
+.content-header .message .map {
+  display: inline-block;
+  width: 0.09rem;
+  height: 0.12rem;
+  margin: 0.12rem 0.07rem 0 0;
+  background-image: url(../img/pictures.png);
+  background-size: 3.6rem 2.71rem;
+  background-repeat: no-repeat;
+  background-position: -0 -0.115rem;
+}
+
+.content-header .message .adress {
+  display: inline-block;
+  color: #ffffff;
+  font-size: 0.12rem;
+  line-height: 0.12rem;
+}
+
+.skill {
+  height: 0.5rem;
+  padding-left: 0.15rem;
+  font-weight: bold;
+  border-bottom: 1px solid #e1e5e7;
+  color: #333333;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.skill .bule-line {
+  width: 0.15rem;
+  height: 0.13rem;
+  border-left: 0.02rem solid #5fc0cd;
+  border-radius: 1px;
+}
+
+.row-one, .row-two, .row-three, .row-last {
+  min-height: 0.5rem;
+  width: calc(100% - 0.45rem);
+  margin: 0 0.15rem;
+  padding-left: 0.15rem;
+  font-size: 0.16rem;
+  border-bottom: 1px solid #e1e5e7;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.row-one .star, .row-two .star, .row-three .star, .row-last .star {
+  background-image: url(../img/pictures.png);
+  background-size: 3.6rem 2.71rem;
+  background-repeat: no-repeat;
+  width: 0.12rem;
+  height: 0.12rem;
+  background-position: -0 -0;
+  margin-right: 0.05rem;
+}
+
+.row-one .gray-line, .row-two .gray-line, .row-three .gray-line, .row-last .gray-line {
+  width: 0;
+  height: 0.13rem;
+  border-left: 1px solid #e1e5e7;
+  margin: 0 0.13rem;
+}
+
+.row-two .word-left, .row-three .word-left, .row-last .word-left {
+  color: #999999;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
+.row-three .word-right {
+  color: #E26163;
+  font-weight: bold;
+}
+
+.row-last {
+  width: calc(100% - 0.3rem);
+  margin: 0;
+  padding-left: 0.3rem;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 0.84rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .bbs, footer .tel-connect {
+  height: 0.44rem;
+  width: calc(50% - 0.28rem);
+  margin-left: 0.19rem;
+  border: 1px solid #5fc0cd;
+  border-radius: 5px;
+  color: #5fc0cd;
+  font-size: 0.16rem;
+  background-color: #ffffff;
+  outline: none;
+}
+
+footer .tel-connect {
+  color: #ffffff;
+  background-color: #5fc0cd;
+}
+/*# sourceMappingURL=task5.css.map */

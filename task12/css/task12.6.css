@@ -1,0 +1,304 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 625%;
+}
+
+body {
+  font-size: initial;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 0.84rem;
+  z-index: 1;
+}
+
+.header-top {
+  position: relative;
+  width: 100%;
+  height: 0.44rem;
+  background-color: #5fc0cd;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header-top .map {
+  position: absolute;
+  right: 0.15rem;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+  width: 0.21rem;
+  height: 0.22rem;
+  background-image: url(../img/task12.6.png);
+  background-size: 1.065rem 0.22rem;
+  background-position: -0.625rem 0;
+}
+
+.header-top .header-center {
+  height: 0.35rem;
+  width: 1.41rem;
+  font-size: 0.17rem;
+  text-align: center;
+  color: #ffffff;
+  line-height: 0.35rem;
+  border-radius: 0.05rem;
+  background-color: #55a8b3;
+}
+
+.header-top .header-center .findWorker {
+  float: right;
+  width: 50%;
+  height: 100%;
+  color: #5fc0cd;
+  background-color: #ffffff;
+  line-height: 0.35rem;
+  border-radius: 5px;
+}
+
+nav {
+  width: 100%;
+  height: 0.4rem;
+  font-size: 0.14rem;
+  color: #999999;
+  line-height: 0.4rem;
+  text-align: center;
+  border-bottom: 1px solid #e1e5e7;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+nav .location, nav .eal, nav .situation {
+  position: relative;
+  width: 33.3%;
+  border-right: 1px solid #e1e5e7;
+}
+
+nav .location::after, nav .eal::after, nav .situation::after {
+  content: "";
+  position: absolute;
+  right: 0.06rem;
+  top: 0.18rem;
+  width: 0;
+  height: 0;
+  border: 5px solid #e1e5e7;
+  border-left-color: transparent;
+  border-right-color: transparent;
+  border-bottom-color: transparent;
+}
+
+nav .location ul, nav .eal ul, nav .situation ul {
+  display: none;
+  list-style: none;
+}
+
+nav .location ul:first-child, nav .eal ul:first-child, nav .situation ul:first-child {
+  border-top: 1px solid #e1e5e7;
+}
+
+nav .location:hover ul, nav .eal:hover ul, nav .situation:hover ul {
+  display: block;
+}
+
+nav .location li, nav .eal li, nav .situation li {
+  background-color: #ffffff;
+  border-bottom: 1px solid #e1e5e7;
+  border-right: 1px solid #e1e5e7;
+}
+
+nav .location a, nav .eal a, nav .situation a {
+  text-decoration: none;
+  color: #999999;
+}
+
+nav .eal li, nav .situation li {
+  border-left: 1px solid #e1e5e7;
+}
+
+nav .situation {
+  border: none;
+}
+
+nav .situation li {
+  border-right: none;
+}
+
+main {
+  position: fixed;
+  top: 0.84rem;
+  bottom: 0.5rem;
+  width: 100%;
+  overflow: hidden auto;
+}
+
+.box {
+  position: relative;
+  height: 0.9rem;
+  width: 100%;
+  border-bottom: 1px solid #e1e5e7;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.box .date, .box .adress {
+  margin-top: 0.14rem;
+  font-size: 0.14rem;
+  line-height: 0.14rem;
+  color: #999999;
+}
+
+.box .date .calendar, .box .adress .calendar {
+  display: inline-block;
+  width: 0.12rem;
+  height: 0.12rem;
+  margin: 0 0.08rem 0 0.15rem;
+  background-image: url(../img/task12.6.png);
+  background-size: 1.065rem 0.22rem;
+  background-position: -0.095rem 0;
+}
+
+.box .box-middle {
+  margin-top: 0.12rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.box .box-middle .word-left {
+  margin-left: 0.34rem;
+  font-size: 0.14rem;
+  font-weight: bold;
+  color: #333333;
+  line-height: 0.14rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.box .box-middle .word-right {
+  margin-right: 0.36rem;
+  font-size: 0.15rem;
+  line-height: 0.15rem;
+  color: #e63b0e;
+  white-space: nowrap;
+}
+
+.box .adress {
+  margin-top: 0.1rem;
+}
+
+.box .adress .map2 {
+  display: inline-block;
+  background-image: url(../img/task12.6.png);
+  background-size: 1.065rem 0.22rem;
+  width: 0.095rem;
+  height: 0.115rem;
+  margin: 0 0.08rem 0 0.16rem;
+  background-position: -0 -0;
+}
+
+.box .next {
+  position: absolute;
+  right: 0.16rem;
+  top: calc(50% - 0.065rem);
+  width: 0.13rem;
+  height: 0.13rem;
+  border: 2px solid #5fc0cd;
+  border-left: none;
+  border-top: none;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  height: 0.5rem;
+  width: 100%;
+  background-color: #f8fafb;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .footer-left, footer .footer-right {
+  width: calc(50% - .235rem);
+  height: 100%;
+  font-size: 0.1rem;
+  line-height: 0.1rem;
+  color: #5fc0cd;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .footer-left .house, footer .footer-right .house {
+  width: 0.23rem;
+  height: 0.2rem;
+  margin: 0.06rem 0 0.07rem;
+  background-image: url(../img/task12.6.png);
+  background-size: 1.065rem 0.22rem;
+  background-position: -0.835rem -0;
+}
+
+footer .footer-right {
+  color: #999999;
+}
+
+footer .footer-right .man {
+  width: 0.21rem;
+  height: 0.21rem;
+  margin: 0.05rem 0 0.08rem;
+  background-image: url(../img/task12.6.png);
+  background-size: 1.065rem 0.22rem;
+  background-position: -0.415rem 0;
+}
+
+footer .footer-middle {
+  width: 0.47rem;
+  height: 0.47rem;
+  border-radius: 50%;
+  background: #5fc0cd;
+}
+
+footer .footer-middle .write {
+  width: 0.2rem;
+  height: 0.205rem;
+  margin: 0.1325rem auto;
+  background-image: url(../img/task12.6.png);
+  background-size: 1.065rem 0.22rem;
+  background-position: -0.215rem 0;
+}
+/*# sourceMappingURL=task12.6.css.map */

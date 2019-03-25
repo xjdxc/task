@@ -1,0 +1,221 @@
+$header-height:0.44rem;
+$content-border:1px solid rgba(225, 229, 231, 1);
+@mixin pictures {
+    background: {
+        image: url(../img/pictures.png);
+        size: 3.6rem 2.71rem;
+        repeat: no-repeat;
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 625%;
+}
+
+body {
+    font-size: initial;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: $header-height;
+    background-color: rgba(95, 192, 205, 1);
+
+    .back {
+        float: left;
+        width: 0.1rem;
+        height: 0.1rem;
+        margin: .14rem 0 0 0.18rem;
+
+        border: 0.02rem solid #ffffff {
+            right: 0;
+            bottom: 0;
+        }
+
+        transform: rotate(-45deg);
+    }
+
+    .homepage {
+        width: 0.72rem;
+        margin: 0 auto;
+        line-height: $header-height;
+        font-size: 0.18rem;
+        color: #ffffff;
+    }
+}
+
+main {
+    position: fixed;
+    top: 0.44rem;
+    bottom: 0.84rem;
+    width: 100%;
+    overflow-y: scroll;
+}
+
+
+.content-header {
+    width: 100%;
+    height: 1.63rem;
+    display: flex;
+    align-items: center;
+
+    background: {
+        image: url(../img/pictures.png);
+        size: 100% 2.71rem;
+        position: -0 -1.075rem;
+        repeat: no-repeat;
+    }
+
+    .woman {
+        width: 0.84rem;
+        height: 0.84rem;
+        margin: 0 0.15rem;
+        @include pictures;
+        background-position: -0 -0.23rem;
+    }
+
+    .message {
+        color: #ffffff;
+        font-size: 0;
+
+        .name {
+            display: inline-block;
+            font-size: 0.18rem;
+            line-height: 0.18rem;
+        }
+
+        .age {
+            display: inline-block;
+            margin: 0.02rem 0 0 0.15rem;
+            font-size: 0.14rem;
+            line-height: 0.14rem;
+        }
+
+        .map {
+            display: inline-block;
+            width: 0.09rem;
+            height: 0.12rem;
+            margin: 0.12rem 0.07rem 0 0;
+            @include pictures;
+            background-position: -0 -0.115rem;
+        }
+
+        .adress {
+            display: inline-block;
+            color: #ffffff;
+            font-size: 0.12rem;
+            line-height: 0.12rem;
+        }
+    }
+
+
+}
+
+.skill {
+    height: 0.5rem;
+    padding-left: 0.15rem;
+    font-weight: bold;
+    border-bottom: 1px solid rgba(225, 229, 231, 1);
+    color: rgba(51, 51, 51, 1);
+    display: flex;
+    align-items: center;
+
+    .bule-line {
+        width: 0.15rem;
+        height: 0.13rem;
+        border-left: 0.02rem solid rgba(95, 192, 205, 1);
+        border-radius: 1px;
+    }
+}
+
+.row-one {
+    min-height: 0.5rem;
+    width: calc(100% - 0.45rem);
+    margin: 0 0.15rem;
+    padding-left: 0.15rem;
+    font-size: 0.16rem;
+    border-bottom: $content-border;
+    display: flex;
+    align-items: center;
+
+    .star {
+        @include pictures;
+        width: 0.12rem;
+        height: 0.12rem;
+        background-position: -0 -0;
+        margin-right: 0.05rem;
+    }
+
+
+
+    .gray-line {
+        width: 0;
+        height: 0.13rem;
+        border-left: $content-border;
+        margin: 0 0.13rem;
+    }
+
+}
+
+.row-two {
+    @extend .row-one;
+
+    .word-left {
+        color: #999999;
+        flex-shrink: 0;
+    }
+}
+
+.row-three {
+    @extend .row-two;
+
+    .word-right {
+        color: #E26163;
+        font-weight: bold;
+    }
+}
+
+.row-last {
+    @extend .row-two;
+    width: calc(100% - 0.3rem);
+    margin: 0;
+    padding-left: 0.3rem;
+
+}
+
+
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 0.84rem;
+    display: flex;
+    align-items: center;
+
+    .bbs {
+        height: 0.44rem;
+        width: calc(50% - 0.28rem);
+        margin-left: 0.19rem;
+        border: 1px solid rgba(95, 192, 205, 1);
+        border-radius: 5px;
+        color: rgba(95, 192, 205, 1);
+        font-size: 0.16rem;
+        background-color: #ffffff;
+        outline: none;
+    }
+
+    .tel-connect {
+        @extend .bbs;
+        color: #ffffff;
+        background-color: rgba(95, 192, 205, 1);
+    }
+
+}
