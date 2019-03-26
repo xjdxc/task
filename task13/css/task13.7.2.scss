@@ -1,0 +1,189 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 625%;
+}
+
+body {
+    font-size: initial;
+    overflow: hidden auto;
+    line-height: 1;
+}
+
+button {
+    outline: none;
+    border: none;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    height: 0.46rem;
+    width: 100%;
+    font-size: .17rem;
+    color: #ffffff;
+    text-align: center;
+    background: #29bde0;
+    border-bottom: 1px solid rgba(255, 255, 255, .35);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .house {
+        width: .26rem;
+        height: .21rem;
+        margin-left: .1rem;
+    }
+
+    .tip {
+        width: .2rem;
+        height: .2rem;
+        margin-right: .09rem;
+        border-radius: 50%;
+        border: 2px solid #ffffff;
+    }
+}
+
+main {
+    position: fixed;
+    top: 0.46rem;
+    bottom: 0;
+    width: 100%;
+    overflow: hidden auto;
+    padding-bottom: .65rem;
+}
+
+.content-top {
+    width: 100%;
+    padding: .12rem 0;
+    background: #29bde0;
+
+    .cup {
+        position: relative;
+        width: 1.76rem;
+        height: 1.03rem;
+        margin: 0 auto;
+        background: url(../image/task13.7.2/cup.png);
+        background-size: 1.76rem 1.06rem;
+
+        .win {
+            position: absolute;
+            top: .7rem;
+            left: 50%;
+            transform: translateX(-50%);
+            width: .96rem;
+            font-size: .24rem;
+            color: #fff;
+        }
+    }
+
+    .great {
+        width: 75%;
+        margin: 0.11rem auto .31rem auto;
+        font-size: .17rem;
+        line-height: .2rem;
+        color: #FFC865;
+    }
+
+    .statistics {
+        width: 75%;
+        margin: 0 auto;
+        font-size: .13rem;
+        line-height: .2rem;
+        color: #fff;
+
+        .people {
+            display: inline-block;
+            width: .68rem;
+        }
+    }
+}
+
+.day {
+    height: .85rem;
+    width: 100%;
+    padding: 0 12.5%;
+    border-bottom: 2px solid rgba(83, 83, 83, .2);
+
+    .date {
+        display: inline-block;
+        margin: 0.07rem 0 0.08rem;
+        font-size: 0.15rem;
+        color: rgba(81, 81, 81, 1);
+    }
+
+    .time {
+        float: right;
+        margin-top: 0.11rem;
+        font-size: 0.1rem;
+        color: rgba(199, 199, 199, 1);
+    }
+
+    .night {
+        font-size: 0.13rem;
+        color: rgba(166, 166, 166, 1);
+        margin: 0.06rem 0 0;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@mixin button-conner {
+    border-radius: 5px;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 0.65rem;
+
+
+    background: rgba(41, 189, 224, 0.48);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    .again {
+        width: 42.5vw;
+        height: .43rem;
+        color: #fff;
+        font-size: .2rem;
+        background: rgba(246, 111, 111, 1);
+        @include button-conner;
+    }
+
+    .share {
+        @extend .again;
+        background: rgba(251, 180, 53, 1);
+    }
+}
