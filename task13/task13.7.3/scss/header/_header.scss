@@ -1,0 +1,24 @@
+header {
+    height: .4rem;
+    background: rgba(41, 189, 224, 1);
+    box-shadow: 0px 0px 7px 0px rgba(40, 88, 99, 0.14);
+    z-index: 1;
+
+    .menu {
+        
+        position: absolute;
+        left: 0.11rem;
+        top: 0.16rem;
+        width: 0.17rem;
+        height: 0.14rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .line {
+            height: 0.02rem;
+            width: 100%;
+            background-color: #ffffff;
+        }
+    }
+}

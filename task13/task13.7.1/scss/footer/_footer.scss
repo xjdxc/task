@@ -1,0 +1,20 @@
+
+footer {
+    position: fixed;
+    bottom: 0;
+    height: 0.95rem; 
+    width: 100%;
+
+    button {
+        position: absolute;
+        top: 0.21rem;
+        left: 12.5%;
+        height: 0.44rem;
+        width: 75%;
+        background-color: #fbb435;
+        color: #ffffff;
+        font-size: 0.22rem;
+        outline: none;
+        border: none;
+    }
+}

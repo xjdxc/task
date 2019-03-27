@@ -1,0 +1,32 @@
+@mixin button-conner {
+    border-radius: 5px;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    height: 0.46rem;
+    width: 100%;
+    font-size: .17rem;
+    color: #ffffff;
+    text-align: center;
+    background: #29bde0;
+    border-bottom: 1px solid rgba(255, 255, 255, .35);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .house {
+        width: .26rem;
+        height: .21rem;
+        margin-left: .1rem;
+    }
+
+    .tip {
+        width: .2rem;
+        height: .2rem;
+        margin-right: .09rem;
+        border-radius: 50%;
+        border: 2px solid #ffffff;
+    }
+}
