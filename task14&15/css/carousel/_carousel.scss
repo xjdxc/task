@@ -1,0 +1,150 @@
+@keyframes handsome {
+    0%,
+    27% {
+        background-position: 0 0;
+    }
+
+    33%,
+    60% {
+        background-position: -100vw 0;
+    }
+
+    66%,
+    93% {
+        background-position: -200vw 0;
+    }
+
+    99%,
+    100% {
+        background-position: -300vw 0;
+    }
+}
+
+@keyframes prev {
+    100% {
+        background-position: 200vw 0;
+    }
+}
+
+@keyframes next {
+    100% {
+        background-position: -200vw 0;
+    }
+}
+
+@keyframes pic1 {
+    100% {
+        background-position: 0 0;
+    }
+}
+
+@keyframes pic2 {
+    100% {
+        background-position: -100vw 0;
+    }
+}
+
+@keyframes pic3 {
+    100% {
+        background-position: -200vw 0;
+    }
+}
+
+.carousel-box {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    height: 31.2989vw;
+    width: 100vw;
+    .pic1,.pic2,.pic3 {
+        width: .16rem;
+        height: .16rem;
+        border-radius: 50%;
+        border: 1px solid rgba(255, 255, 255, 0.28);
+        margin: 0.22rem .05rem;
+
+        &:hover {
+            background: #fff;
+        }
+    }
+
+    .pic1:hover~ .carousel {
+        animation: pic1 1s forwards;
+    }
+
+    .pic2:hover~.carousel {
+        animation: pic2 1s forwards;
+    }
+   
+    .pic3:hover~.carousel {
+        animation: pic3 1s forwards;
+    }
+
+
+    .carousel {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 31.2989vw;
+        width: 100vw;
+        background-image: url(../../image/task14.1/css_sprites.png);
+        background-size: 400vw 31.2989vw;
+        background-position: 0 0;
+        z-index: -2;
+        animation: handsome infinite 15s;
+    }
+
+    .prev {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 15%;
+        height: 100%;
+        z-index:-1;
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: calc(50% - .05rem);
+            left: calc(50% - .05rem);
+            width: .10rem;
+            height: .10rem;
+            border: 5px solid rgba(255, 255, 255, 0.28);
+            border-right: none;
+            border-bottom: none;
+            transform: rotate(-45deg);
+        }
+    }
+
+    .prev:visited~.carousel {
+        animation: prev 1s;
+    }
+
+    .next {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 15%;
+        height: 100%;
+        z-index: -1;
+
+        &::after {
+            content: "";
+            position: absolute;
+            top: calc(50% - .05rem);
+            right: calc(50% - .05rem);
+            width: .1rem;
+            height: .1rem;
+            border: 5px solid rgba(255, 255, 255, 0.28);
+            border-left: none;
+            border-bottom: none;
+            transform: rotate(45deg);
+        }
+    }
+
+    .next:visited~.carousel {
+        animation: next 1s;
+    }
+}

@@ -1,0 +1,128 @@
+main {
+    background-color: #fafafa;
+    padding-bottom: 2.3rem;
+}
+
+.banner {
+    max-width: 100vw;
+    height: 12.9167vw;
+    background: url(../../image/task14.2/banner.png) -0 -0/100%;
+}
+
+.subnav {
+    height: .8rem;
+    line-height: .8rem;
+
+    .qiye {
+        color: #29B078;
+    }
+}
+
+.side-nav {
+    margin-bottom: 1rem;
+    background: rgba(255, 255, 255, 1);
+    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+
+    .side-nav-title {
+        height: .62rem;
+        line-height: .62rem;
+        text-align: center;
+
+        font: {
+            size: .16rem;
+            weight: bold;
+        }
+
+        border-bottom: .01rem solid rgba(230, 230, 230, 1);
+    }
+
+    .side-nav-content {
+        padding: .22rem 0;
+
+        @media screen and (max-width: 992px) {
+            padding: .176rem 0;
+        }
+
+        li {
+            position: relative;
+            height: .5rem;
+            line-height: .5rem;
+            font-weight: bold;
+            text-align: center;
+
+            @media screen and (max-width: 992px) {
+                height: .4rem;
+            }
+
+            a {
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-.21rem, -50%);
+                line-height: .14rem;
+                font-size: .14rem;
+                color: #29B078;
+
+                &::before {
+                    content: "";
+                    position: absolute;
+                    bottom: 0.04rem;
+                    left: -0.16rem;
+                    width: 6px;
+                    height: 6px;
+                    background: rgba(255, 255, 255, 1);
+                    border: 1px solid #ff9052;
+                    border-radius: 50%;
+                }
+
+                &::after {
+                    content: "";
+                    display: none;
+                    position: absolute;
+                    bottom: 0.04rem;
+                    left: -0.16rem;
+                    width: 6px;
+                    height: 6px;
+                    background: rgba(249, 163, 114, 1);
+                    border: 1px solid rgba(249, 163, 114, 1);
+                    border-radius: 50%;
+                }
+
+                &:hover::after {
+                    display: inherit;
+                }
+            }
+        }
+    }
+}
+
+.potato-instrution {
+    padding-bottom: 1.8rem;
+    color: #999;
+    font-size: .14rem;
+    font-weight: bold;
+    line-height: .28rem;
+    background: rgba(255, 255, 255, 1);
+    box-shadow: 0px 1px 3px 0px rgba(8, 1, 3, 0.15);
+    border-radius: 4px;
+
+    .instrution-title {
+        padding: .25rem .7rem;
+        border-bottom: 1px solid rgba(230, 230, 230, 1);
+
+        .potato {
+            float: left;
+            width: 1.34rem;
+            height: 1.22rem;
+            background: url(../../image/task14.2/potato.png);
+
+        }
+    }
+
+    .instrution-content {
+        text-indent:.28rem;
+        margin-top: .38rem;
+        padding: 0 .7rem;
+    }
+}
