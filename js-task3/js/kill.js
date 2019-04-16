@@ -104,12 +104,7 @@ $("button").eq(0).click(function () {
         // console.log(sessionStorage.normalsNumber)
         let deathlist = nightlist.concat(daylist); //得出死亡玩家号码数组
         sessionStorage.deathList = JSON.stringify(deathlist); //储存
-        // 判断游戏是否结束
-        if ((sessionStorage.killersNumber >= sessionStorage.normalsNumber) || (sessionStorage.killersNumber == 0)) {
-            window.location = "finally.html"
-        } else {
-            window.location = "days.html"
-        }
+        window.location = "days.html"
     } else {
         nightlist = JSON.parse(sessionStorage.nightList) //读取夜晚出局数组
         daylist = JSON.parse(sessionStorage.dayList) //读取白天出局数组
@@ -130,7 +125,9 @@ $("button").eq(0).click(function () {
         sessionStorage.dayList = JSON.stringify(daylist);
         sessionStorage.nightList = JSON.stringify(nightlist);
         // 判断游戏是否结束
-        if ((sessionStorage.killersNumber >= sessionStorage.normalsNumber) || (sessionStorage.killersNumber == 0)) {
+        let a = Number(sessionStorage.killersNumber)
+        let b = Number( sessionStorage.normalsNumber)
+        if (a >= b || a == 0) {
             window.location = "finally.html"
         } else {
             window.location = "days.html"
@@ -146,11 +143,13 @@ $("button").eq(0).click(function () {
 })
 
 //控制audio播放
-$(".player").eq(0).click(function(){
-    let song = $("#player")[0]; /*jquery对象转换成js对象*/
-        if (song.paused){ /*如果已经暂停*/
-            song.play(); /*播放*/
-        }else {
-            song.pause();/*暂停*/
-        }
-})  
+$(".player").eq(0).click(function () {
+    // let song = $("#player")[0]; /*jquery对象转换成js对象*/
+    let song = document.getElementById("player");
+    if (song.paused) {
+        /*如果已经暂停*/
+        song.play(); /*播放*/
+    } else {
+        song.pause(); /*暂停*/
+    }
+})

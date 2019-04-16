@@ -5,7 +5,7 @@ if (sessionStorage.over) {
 } else if (sessionStorage.killersNumber == 0) {
     $(".win").eq(0).text("好人胜利")
     $(".great").eq(0).text("太棒了！通过好人的通力合作，最终赢下了这场胜利！")
-} else {}
+} else if(sessionStorage.killersNumber >= sessionStorage.normalsNumber){}
 //展示剩余玩家数量
 $("#killers").text("杀手" + sessionStorage.killersNumber + "人")
 $("#normals").text("平民" + sessionStorage.normalsNumber + "人")
@@ -63,9 +63,11 @@ for (let i = 0; i < days; i++) {
             deathID = "平民";
             break;
     }
-    $(".night").eq(i).text("晚上" + Number(nightlist[i] + 1) + "号被杀手杀死,"+"他的身份是平民")
+    if (nightlist[i] != undefined) {
+        $(".night").eq(i).text("晚上" + Number(nightlist[i] + 1) + "号被杀手杀死," + "他的身份是平民")
+    }
     if (daylist[i] != undefined) {
-        $(".sun").eq(i).text("白天" + Number(daylist[i] + 1) + "号被全民投出,"+"他的身份是"+deathID)
+        $(".sun").eq(i).text("白天" + Number(daylist[i] + 1) + "号被全民投出," + "他的身份是" + deathID)
     }
 }
 //再来一局
