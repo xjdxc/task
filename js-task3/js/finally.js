@@ -64,10 +64,10 @@ for (let i = 0; i < days; i++) {
             break;
     }
     if (nightlist[i] != undefined) {
-        $(".night").eq(i).text("晚上" + Number(nightlist[i] + 1) + "号被杀手杀死," + "他的身份是平民")
+        $(".night").eq(i).text("晚上:" + Number(nightlist[i] + 1) + "号被杀手杀死," + "他的身份是平民")
     }
     if (daylist[i] != undefined) {
-        $(".sun").eq(i).text("白天" + Number(daylist[i] + 1) + "号被全民投出," + "他的身份是" + deathID)
+        $(".sun").eq(i).text("白天:" + Number(daylist[i] + 1) + "号被全民投出," + "他的身份是" + deathID)
     }
 }
 //再来一局
