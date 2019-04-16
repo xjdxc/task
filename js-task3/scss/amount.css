@@ -1,0 +1,189 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 625%;
+}
+
+body {
+    font-size: initial;
+    background-color: #f0f0f0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: .44rem;
+    background-color: #29BDE0;
+}
+
+.back {
+    width: .1rem;
+    height: .1rem;
+    margin-left: .1rem;
+    border: 3px solid #fff;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    transform: rotate(-45deg);
+}
+
+.header-title {
+    color: #fff;
+    font-size: .17rem;
+}
+
+.help {
+    width: .21rem;
+    height: .21rem;
+    margin-right: .11rem;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    border: 2px solid #fff;
+    border-radius: 50%;
+}
+
+.player {
+    width: calc(100% - .2rem);
+    height: .5rem;
+    margin: .2rem auto 0;
+    font-size: .18rem;
+    text-align: center;
+    line-height: .5rem;
+    color: #444444;
+    background-color: #fff;
+}
+
+.player-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: calc(100% - .2rem);
+    height: 1rem;
+    margin: .1rem auto;
+    background-color: #fbfbfb;
+}
+
+.killer {
+    width: .4rem;
+    height: .4rem;
+    margin-right: .1rem;
+    background: url(../img/amount/killer.jpg);
+    background-size: 100% 100%;
+    border-radius: 50%;
+}
+
+.normalman {
+    width: .4rem;
+    height: .4rem;
+    margin-right: .1rem;
+    background: url(../img/amount/normalman.png);
+    background-size: 100% 100%;
+    border-radius: 50%;
+}
+
+.in-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: calc(100% - .2rem);
+    height: .90rem;
+    margin: .1rem auto;
+    font-size: .14rem;
+    background-color: #fbfbfb;
+}
+
+#range {
+    width: 2rem;
+}
+
+.population {
+    width: 30px;
+    height: 21px;
+    margin: 0 .1rem;
+    background: rgba(237, 238, 238, 1);
+    opacity: 0.6;
+    border: none;
+    text-align: center;
+}
+
+.go {
+    display: block;
+    height: .44rem;
+    width: calc(100% - .2rem);
+    margin: .1rem auto;
+    color: #fff;
+    font-size: .2rem;
+    font-weight: bold;
+    background-color: rgba(250, 179, 68, 1);
+    outline: none;
+    border: none;
+}
+
+.limit {
+    margin-left: .1rem;
+    color: #FAB344;
+    font-size: .12rem;
+}
+
+.range {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    appearance: none;
+}
+
+.minus,
+.maxus {
+    display: inline-block;
+    position: relative;
+    width: .13rem;
+    height: .13rem;
+    margin: 0 0.12rem;
+    border: 1px solid rgba(217, 217, 217, 1);
+}
+
+.minus::before,
+.maxus::before {
+    content: "";
+    position: absolute;
+    left: .02rem;
+    top: .06rem;
+    width: .09rem;
+    height: .02rem;
+    background-color: rgba(250, 179, 68, 1);
+    align-items: baseline
+}
+
+.maxus::after {
+    content: "";
+    position: absolute;
+    left: .055rem;
+    top: .02rem;
+    width: .02rem;
+    height: .09rem;
+    background-color: rgba(250, 179, 68, 1);
+    align-items: baseline
+}
+
+input[type=range] {
+    -webkit-appearance: none;
+    height: 2px;
+    background: linear-gradient(to right, rgb(251, 180, 53), white 90%, white);
+    outline: none;
+}
+
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    height: 12px;
+    width: 12px;
+    background: #ffffff; 
+    border-radius: 50%; /*外观设置为圆形*/
+    border: solid 0.125em rgba(205, 224, 230, 0.5); /*设置边框*/
+    box-shadow: 0 .125em .125em #3b4547; /*添加底部阴影*/
+}

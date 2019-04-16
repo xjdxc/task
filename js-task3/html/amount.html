@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>设置玩家人数</title>
+    <link rel="stylesheet" href="../scss/amount.css">
+</head>
+
+<body>
+    <header>
+        <div class="back"></div>
+        <div class="header-title">参数设置</div>
+        <div class="help">?</div>
+    </header>
+    <main>
+        <div class="player">玩家配比</div>
+        <div class="player-content">
+            <div class="killer"></div>杀手<span id="killers"></span>人
+        </div>
+        <div class="player-content">
+            <div class="normalman"></div>平民<span id="normals"></span>人
+        </div>
+        <div class="in-box">
+            <p>玩家数量
+                <input value="8" id="amount" type="text" class="population" maxlength="2">人 </p>
+            <p class="limit">玩家数量为4-18人</p>
+            <div class="range"><div class="minus"></div> <input value="8" type="range" id="range" min="4" max="18">
+            <div class="maxus"></div></div>
+        </div>
+    </main>
+    <footer>
+        <button name="amount" type="button" onclick="" class="go">去发牌</button>
+    </footer>
+    <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="../js/amount.js"></script>
+</body>
+</html>

@@ -1,0 +1,81 @@
+main {
+    position: fixed;
+    top: 0.46rem;
+    bottom: 0;
+    width: 100%;
+    overflow: hidden auto;
+    padding-bottom: .65rem;
+}
+
+.content-top {
+    width: 100%;
+    padding: .12rem 0;
+    background: #29bde0;
+
+    .cup {
+        position: relative;
+        width: 1.76rem;
+        height: 1.03rem;
+        margin: 0 auto;
+        background: url(../image/cup.png);
+        background-size: 1.76rem 1.06rem;
+
+        .win {
+            position: absolute;
+            top: .7rem;
+            left: 50%;
+            transform: translateX(-50%);
+            width: .96rem;
+            font-size: .24rem;
+            color: #fff;
+        }
+    }
+
+    .great {
+        width: 75%;
+        margin: 0.11rem auto .31rem auto;
+        font-size: .17rem;
+        line-height: .2rem;
+        color: #FFC865;
+    }
+
+    .statistics {
+        width: 75%;
+        margin: 0 auto;
+        font-size: .13rem;
+        line-height: .2rem;
+        color: #fff;
+
+        .people {
+            display: inline-block;
+            width: .68rem;
+        }
+    }
+}
+
+.day {
+    height: .85rem;
+    width: 100%;
+    padding: 0 12.5%;
+    border-bottom: 2px solid rgba(83, 83, 83, .2);
+
+    .date {
+        display: inline-block;
+        margin: 0.07rem 0 0.08rem;
+        font-size: 0.15rem;
+        color: rgba(81, 81, 81, 1);
+    }
+
+    .time {
+        float: right;
+        margin-top: 0.11rem;
+        font-size: 0.1rem;
+        color: rgba(199, 199, 199, 1);
+    }
+
+    .night {
+        font-size: 0.13rem;
+        color: rgba(166, 166, 166, 1);
+        margin: 0.06rem 0 0;
+    }
+}

@@ -1,0 +1,179 @@
+main {
+    margin: 0rem 0 .3rem;
+    padding: .13rem 0 0 0;
+    overflow: hidden auto;
+}
+
+.lastGame {
+    position: relative;
+    width: 88.75vw;
+    height: .58rem;
+    margin: 0 auto;
+    font-size: .17rem;
+    line-height: .58rem;
+    text-align: center;
+    border: 1px solid rgba(201, 201, 201, 1);
+    background: #fff;
+
+    a {
+        color: rgba(154, 154, 154, 1);
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        right: .07rem;
+        top: calc(50% - .075rem);
+        width: .15rem;
+        height: .15rem;
+
+        border: {
+            right: 3px solid rgba(231, 231, 231, 1);
+            bottom: 3px solid rgba(231, 231, 231, 1);
+        }
+
+        transform: rotate(-45deg);
+        pointer-events: none;
+    }
+}
+
+.content {
+    position: relative;
+    width: 88.75vw;
+    margin: .13rem auto 0;
+    background-color: #fff;
+    border: 1px solid rgba(201, 201, 201, 1);
+
+    .triangle {
+        position: absolute;
+        top: 1.89rem;
+        right: -0.1rem;
+        width: 0rem;
+        height: 0rem;
+        border: .14rem solid rgba(251, 180, 53, 1);
+        border-color: transparent transparent transparent rgba(251, 180, 53, 1);
+
+    }
+
+    .findGoast {
+        height: .45rem;
+        width: 100%;
+        font-size: .19rem;
+        line-height: .45rem;
+        text-align: center;
+        color: rgba(251, 180, 53, 1);
+        border-bottom: 1px solid rgba(251, 180, 53, 1);
+    }
+
+    .box {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        height: 3.24rem;
+        margin-top: .16rem;
+    }
+
+    .edition {
+        height: .67rem;
+        width: 72vw;
+        font-size: .16rem;
+        line-height: .67rem;
+        text-align: center;
+        color: #fff;
+        background: rgba(105, 209, 233, 1);
+    }
+
+    .player {
+        font-size: .12rem;
+        color: rgba(120, 120, 120, 1);
+    }
+
+    ul {
+        margin: .07rem auto .04rem;
+        display: flex;
+        justify-content: center;
+
+        .circle {
+            width: .08rem;
+            height: .08rem;
+            margin: 0 .02rem;
+            background: rgba(240, 240, 240, 1);
+            border-radius: 50%;
+
+            &:hover {
+                background-color: rgba(105, 209, 233, 1)
+            }
+        }
+    }
+}
+
+.menuBar {
+    position: fixed;
+    top: 0;
+    left: -2.4rem;
+    width: 2.4rem;
+    height: 5.32rem;
+    background-color: #fff;
+
+    .row {
+        position: relative;
+        display: flex;
+        align-items: center;
+        width: 100%;
+        height: .4rem;
+        border-bottom: 1px solid rgba(83, 83, 83, 0.2);
+        line-height: .35rem;
+        color: #29bde0;
+
+        .horn {
+            margin: 0 .1rem;
+        }
+
+        &::after {
+            content: "";
+            position: absolute;
+            right: .17rem;
+            top: calc(50% - .05rem);
+            width: .1rem;
+            height: .1rem;
+            border-right: 2px solid #29bde0;
+            border-bottom: 2px solid #29bde0;
+            transform: rotate(-45deg);
+            pointer-events: none;
+        }
+    }
+}
+
+#boom {
+    display: none;
+}
+
+@keyframes left-in {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    100% {
+        transform: translate(2.4rem, 0);
+    }
+}
+
+#boom:checked~header{
+    animation: left-in .8s forwards;
+}
+
+#boom:checked~main {
+    animation: left-in .8s forwards;
+}
+
+#boom:checked~.menuBar {
+    animation: left-in .8s forwards;
+}
+
+body {
+    overflow: hidden;
+    height: 100vh;
+}
+
+
