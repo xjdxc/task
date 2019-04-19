@@ -1,0 +1,84 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+html{
+    font-size: 625%;
+}
+
+body{
+    position: relative;
+    height: 100vh;
+    font-size: initial;
+    background: url(../image/login-bg-orange.jpg) 0 0/100% 100% no-repeat
+}
+
+.login{
+    position: absolute;
+    top:50%;
+    left:50%;
+    width:35vw;
+    height:3.15rem;
+    transform: translate(-50%,-50%);
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-shadow: 0 1px 1px rgba(0,0,0,.05);
+}
+
+.three-carrots{
+    position: absolute;
+    left:50%;
+    top:0;
+    transform: translate(-50%,-50%);
+    width:.76rem;
+    height:.76rem;
+    background: url(../image/login-logo.png) .03rem 0;
+    border-radius:50%;
+    box-shadow: 0 -3px 7px rgba(160, 160, 160, 0.5);
+}
+
+.user-name{
+    height: .46rem;
+    width: calc(100% - .8rem);
+    margin:.76rem .2rem 0;
+    padding-left: .4rem;
+    font-size: .18rem;
+    color: #fd9f2a;
+    border:1px solid #ccc;
+    border-radius: 4px;
+    background: url(../image/loginuser.png)  .1rem .1rem   no-repeat
+}
+
+
+.user-password{
+    height: .46rem;
+    width: calc(100% - .8rem);
+    margin:.16rem .2rem 0;
+    padding-left: .4rem;
+    font-size: .18rem;
+    color: #fd9f2a;
+    border:1px solid #ccc;
+    border-radius: 4px;
+    background: url(../image/loginpsd.png)  .1rem .1rem   no-repeat
+}
+
+.btn-login{
+    height: .46rem;
+    width: calc(100% - .38rem);
+    margin:.16rem .2rem 0;
+    font-size: .18rem;
+    color: #fff;
+    background-color: #fd9f2a;
+    border-color: #fd9f2a;
+    outline: none;
+    border-radius: 5px;
+    border:none;
+}
+
+#fuck{
+    margin-top:.05rem;
+    text-align: center;
+    color:#fd9f2a;
+}
